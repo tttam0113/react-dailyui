@@ -10,12 +10,12 @@ class App extends Component {
         mounted: false
     };
     
-
     componentDidMount() {
         this.setState( {mounted: true} );
     }
 
     handleSubmit( e ) {
+        console.log('handle submit');
         this.setState( {mounted: false} );
         e.preventDefault();
     }

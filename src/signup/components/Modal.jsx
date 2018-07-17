@@ -1,7 +1,12 @@
 import React from 'react';
 import Input from './Input';
+import PropTypes from 'prop-types';
 
 export default class Modal extends React.Component {
+
+    static propTypes = {
+        onSubmit: PropTypes.func
+    };
 
     render() {
         return (<div className='Modal'>
