@@ -5,9 +5,9 @@ const DevConfig = require( './webpack.dev.config.js' );
 module.exports = merge( DevConfig, {
     
     entry: {
-        bundle: path.resolve('src/signup/index.jsx')
+        bundle: path.resolve('src/voteapp/index.jsx')
     },
     devServer: {
-        port: 3001
+        port: 3002,
     },
 } );
