@@ -12,6 +12,8 @@ class EditableTimer extends React.Component {
         runningSince: PropTypes.number,
         onFormSubmit: PropTypes.func,
         onTrashClick: PropTypes.func,
+        onStartClick: PropTypes.func,
+        onStopClick: PropTypes.func,
     };
 
     state = {
@@ -60,6 +62,8 @@ class EditableTimer extends React.Component {
                     runningSince={this.props.runningSince}
                     onEditClick={this.handleEditClick}
                     onTrashClick={this.props.onTrashClick}
+                    onStartClick={this.props.onStartClick}
+                    onStopClick={this.props.onStopClick}
                 />
             );
         }

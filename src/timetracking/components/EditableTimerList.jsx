@@ -8,6 +8,8 @@ class EditableTimerList extends React.Component {
         timers: PropTypes.array.isRequired,
         onFormSubmit: PropTypes.func,
         onTrashClick: PropTypes.func,
+        onStartClick: PropTypes.func,
+        onStopClick: PropTypes.func,
     };
 
     render() {
@@ -21,6 +23,8 @@ class EditableTimerList extends React.Component {
                 runningSince={timer.runningSince}
                 onFormSubmit={this.props.onFormSubmit}
                 onTrashClick={this.props.onTrashClick}
+                onStartClick={this.props.onStartClick}
+                onStopClick={this.props.onStopClick}
             />
         ));
         return (

@@ -8,6 +8,7 @@
         "signup-dev": "webpack-dev-server --config webpack.signup.dev.config.js --progress --colors --content-base dist/",
         "voteapp-dev": "webpack-dev-server --config webpack.voteapp.dev.config.js --progress --colors --content-base dist/",
         "timetracking-dev": "webpack-dev-server --config webpack.timetracking.dev.config.js --progress --colors --content-base dist/",
+        "checkout-dev": "webpack-dev-server --config webpack.checkout.dev.config.js --progress --colors --content-base dist/",
         "serve": "http-server -p 8000 dist/",
         "lint": "eslint ./src --ext .js,.jsx"
     },
