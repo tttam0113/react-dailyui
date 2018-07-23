@@ -1,5 +1,5 @@
 {
-    "name": "renamed-react-base-tpl",
+    "name": "react-dailyui",
     "version": "0.1.0",
     "private": true,
     "scripts": {
@@ -7,6 +7,7 @@
         "dev": "webpack-dev-server --config webpack.dev.config.js --progress --colors --content-base dist/",
         "signup-dev": "webpack-dev-server --config webpack.signup.dev.config.js --progress --colors --content-base dist/",
         "voteapp-dev": "webpack-dev-server --config webpack.voteapp.dev.config.js --progress --colors --content-base dist/",
+        "timetracking-dev": "webpack-dev-server --config webpack.timetracking.dev.config.js --progress --colors --content-base dist/",
         "serve": "http-server -p 8000 dist/",
         "lint": "eslint ./src --ext .js,.jsx"
     },
@@ -40,6 +41,7 @@
         "sass-loader": "^7.0.2",
         "style-loader": "^0.21.0",
         "url-loader": "^1.0.1",
+        "uuid": "^3.3.2",
         "webpack": "^4.10.2",
         "webpack-cli": "^3.0.2",
         "webpack-dev-server": "^3.1.4",

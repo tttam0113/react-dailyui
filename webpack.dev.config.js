@@ -18,7 +18,7 @@ module.exports = merge( CommonConfig, {
         sourceMapFilename: 'bundle.map',
         pathinfo: true,
     },
-    // watch: true, 
+    watch: true, 
     plugins: [
         new webpack.DefinePlugin({
             'process.env': {
