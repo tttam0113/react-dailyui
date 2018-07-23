@@ -13,4 +13,10 @@ Listing some products. You can up-vote products.
 
 All products are sorted instantaneously by number of votes.
 
+**3. Time tracking app**
+
+In this time-tracking app, a user can add, delete, and modify various timers. 
+
+Each timer corresponds to a different task that the user would like to keep time for
+
 *--- to be continue ---*
