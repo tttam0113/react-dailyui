@@ -63,7 +63,7 @@ const CheckoutButton = props => {
     );
 };
 
-const PaymentForm = (props) => {
+const PaymentForm = props => {
     return (
         <div className="PaymentForm">
             <form onSubmit={props.onSubmit}>
@@ -85,6 +85,6 @@ const PaymentForm = (props) => {
             </form>
         </div>
     );
-}
+};
 
 export { BasicInput, ExpiryDate, PaymentForm, CheckoutButton };

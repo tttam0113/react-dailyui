@@ -5,7 +5,12 @@ const Td = (props) => {
 };
 
 const Tr = (props) => {
-    return (<tr>{props.children}</tr>);
+    return (
+        <tr>
+            <Td value={props.name} />
+            <Td value={props.value} />
+        </tr>
+    );
 };
 
 class OrderSummary extends React.Component {
@@ -32,22 +37,19 @@ class OrderSummary extends React.Component {
                 <div className="Title">Order Summary</div>
                 <table>
                     <tbody>
-                        <Tr>
-                            <Td value={`${this.props.price} x ${duration}`} />
-                            <Td value={`${initialTotal} GBP`} />
-                        </Tr>
-                        <Tr>
-                            <Td value={'Discount'} />
-                            <Td value={`${discount} GBP`} />
-                        </Tr>
-                        <Tr>
-                            <Td value={'Subtotal'} />
-                            <Td value={`${subTotal} GBP`} />
-                        </Tr>
-                        <Tr>
-                            <Td value={'Tax'} />
-                            <Td value={`${tax} GBP`} />
-                        </Tr>
+                        <Tr 
+                            name={`${this.props.price} x ${duration}`} 
+                            value={`${initialTotal} GBP`} />
+                        <Tr
+                            name={'Discount'}
+                            value={`${discount} GBP`} />
+                        <Tr
+                            name={'Subtotal'}
+                            value={`${subTotal} GBP`} />
+                        
+                        <Tr
+                            name={'Tax'}
+                            value={`${tax} GBP`} />
                     </tbody>
                 </table>
                 <div className="Total">
