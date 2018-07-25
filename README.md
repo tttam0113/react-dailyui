@@ -19,4 +19,12 @@ In this time-tracking app, a user can add, delete, and modify various timers.
 
 Each timer corresponds to a different task that the user would like to keep time for
 
+**4. Checkout form**
+
+Create a checkout form with credit card information
+
+**5. Calculator**
+
+Create a calculator with some simple operations: addition, subtraction, division, and multipalction
+
 *--- to be continue ---*
